@@ -3,7 +3,11 @@
 		Apple Color Emoji, Segoe UI Emoji;
 	font-size: 1rem;
 	--user-font-scale: 1rem - 16px;
-	--primary-content-color: white;
+	--primary-content-color: #75464A;
+	--secondary-content-color: #0f5a32;
+	--tetriary-content-color: #BEABA7;
+	--primary-background-color: #F3EEEA;
+	--secondary-background-color: #E8DBD4;
 }
 
 body {
@@ -15,6 +19,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: var(--primary-background-color);
 }
 
 @media (prefers-color-scheme: dark) {
