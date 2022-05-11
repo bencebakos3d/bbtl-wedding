@@ -1,19 +1,22 @@
 <section class="header">
     <div class="links-wrapper">
-        <a href="/index">Kezdőlap</a>
+        <a href="/">Kezdőlap</a>
         <a href="/location">Helyszín</a>
-        <a href="">Vacsora</a>
-        <a href="">Tudnivalók</a>
+        <a href="/event">Program</a>
         <a href="/contact">Kapcsolat</a>
     </div>
 </section>
 
 <style>
 .header {
+    position: fixed;
+    top: 0;
+    z-index: 5;
     width: 100%;
     height: 60px;
-    background-color: transparent;
+    background-color: var(--primary-background-color-transparent);
     transition: 0.3s ease-out;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header:hover {

@@ -1,0 +1,50 @@
+---
+import '../styles/global.css';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Maps from '../components/Maps.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseHead />
+<body>
+  <Header />
+  <Maps />
+  <div>
+  Az esküvő a Gyógynövények Völgyében lesz tartva, Zala megyében. 
+  A szertartás utáni vacsora pedig a nagyjából egy kilométerre levő Vadvirág Étteremben lesz.
+  <button class="btn-events" href="/event">Programok</button>
+  <div/> 
+  <div>
+    Szállást csak limitáltan tudunk biztosítani a Gyógynövénylakban, 
+    ezért a Zalaszentlászlón található Faluházban lesznek extra szálláshelyek. 
+  </div>
+
+  <div>
+    <span>Fontos tudnivalók</span>
+    <ul>
+      <li>A majorban a dohányzás csak az arra kijelölt helyeken engedélyezett</li>
+      <li>Szemetelni TILOS és életveszélyes</li>
+      <li>Számos állat található a farmon, a közelükben figyelemmel kell lenni</li>
+      <li></li>
+    </ul>
+  </div>
+  </div><Footer /></body>
+
+<style>
+#map {
+  height: 500px;
+  width: 50%;
+}
+
+.btn-events {
+  width: 140px;
+  height: 50px;
+  border-radius: 25px;
+  font-family: 'Roboto';
+  font-size: 1.1rem;
+  color: var(--tetriary-content-color);
+  background-color: var(--tetriary-background-color);
+  border: none;
+  cursor: pointer;
+}
+</style>
