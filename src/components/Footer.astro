@@ -1,10 +1,20 @@
-<section>
+<section>    
     <div>
-        <span>Created by</span>
-        <div>Bence Bakos</div>
-        <div>Laura Toth</div>
+        <span class="created-by">Created by</span>
+        <div class="contact-wrapper">
+            <div>Bence Bakos</div>
+            <div>
+                bencemail1@gmail.com
+            </div>
+        </div>
+        <div class="contact-wrapper">
+            <div>Laura Tóth</div>
+            <div>
+                tothlaura0714@gmail.com
+            </div>
+        </div>
+        <div class="contact-wrapper">2022</div>
     </div>
-    <div>2022</div>
 </section>
 
 <style>
@@ -14,5 +24,18 @@
         background-color: var(--secondary-background-color);
         padding: var(--desktop-global-padding);
         box-sizing: border-box;
+    }
+    .created-by {
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .contact-wrapper {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .contact-wrapper > div {
+        width: 200px;
     }
 </style>
