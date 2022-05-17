@@ -1,4 +1,5 @@
 <section>    
+    <div class="footer-wrapper">
     <div>
         <span class="created-by">Created by</span>
         <div class="contact-wrapper">
@@ -15,6 +16,15 @@
         </div>
         <div class="contact-wrapper">2022</div>
     </div>
+        
+        <div class="icons-wrapper">
+            <img src="src/img/social/icon_fb.svg" onclick="window.open('https://www.facebook.com/bence.bakos.984/')">
+            <img src="src/img/social/icon_insta.svg" onclick="window.open('https://www.instagram.com/benb3d/')">
+            <img src="src/img/social/icon_linkedin.svg" onclick="window.open('https://www.linkedin.com/in/bence-bakos-63a1a2190/')">
+            <img src="src/img/social/icon_github.svg" onclick="window.open('https://github.com/bencebakos3d')">
+            <img src="src/img/social/icon_artstation.svg" onclick="window.open('https://www.artstation.com/bencebakos')">
+        </div>
+    </div>
 </section>
 
 <style>
@@ -24,6 +34,12 @@
         background-color: var(--secondary-background-color);
         padding: var(--desktop-global-padding);
         box-sizing: border-box;
+    }
+    .footer-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
     .created-by {
         font-weight: 600;
@@ -38,4 +54,21 @@
     .contact-wrapper > div {
         width: 200px;
     }
+
+    .icons-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 14vw;
+    }
+.icons-wrapper > img {
+    width: 2.2vw;
+    transition: ease-in-out 0.2s;
+}
+
+.icons-wrapper > img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: ease-in-out 0.2s;
+}
 </style>

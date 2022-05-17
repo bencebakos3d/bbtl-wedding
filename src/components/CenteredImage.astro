@@ -2,7 +2,7 @@
 const {Title, Image} = Astro.props;
 ---
 
-<section style={`background: url(${Image});`}>
+<section style={`background: url(${Image}); background-size: cover;`}>
     <h1>{Title}</h1>
 </section>
 
