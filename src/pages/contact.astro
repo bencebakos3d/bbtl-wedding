@@ -9,7 +9,7 @@ import Footer from '../components/Footer.astro';
 <body>
 	<Header />
 	<CenteredImage Title="Kapcsolat" Image="'img/contact_intro.jpg'" />
-    <section>
+    <section class="section-contact">
 		<h1>Ha bármi kérdésed lenne, keress minket bátran:</h1>
 		<img src="" alt="">
 		<div class="contact-details-wrapper">
@@ -38,6 +38,7 @@ import Footer from '../components/Footer.astro';
 
 h1 {
 	margin-bottom: 50px;
+	font-family: var(--primary-font);
 }
 .contact-details-wrapper {
 	display: flex;
@@ -68,5 +69,25 @@ section {
 
 li {
 	margin-top: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+	.section-contact {
+		min-height: 100vh;
+		padding: 0;
+		justify-content: center;
+	}
+	h1 {
+		width: 100%;
+		padding: 0px 20px;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	.contact-details-wrapper {
+		width: 100%;
+		padding: 0px 20px;
+		box-sizing: border-box;
+		flex-direction: column;
+	}
 }
 </style>

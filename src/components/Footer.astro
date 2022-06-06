@@ -1,22 +1,26 @@
 <section>    
     <div class="footer-wrapper">
-    <div>
-        <span class="created-by">Created by</span>
-        <div class="contact-wrapper">
-            <div>Bence Bakos</div>
-            <div>
-                bencemail1@gmail.com
+        <div class="left-col">
+            <div >
+                <div class="contact-wrapper">
+                    <div>Bence Bakos</div>
+                    <div>
+                        bencemail1@gmail.com
+                    </div>
+                </div>
+                <div class="contact-wrapper">
+                    <div>Laura Tóth</div>
+                    <div>
+                        tothlaura0714@gmail.com
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="design-wrapper">
+                <div class="site-design">Site design and logo: © 2022 Bence Bakos</div>
+                <div class="powered">Powered by<img src="icons/vercel_logo.png"> and <img src="icons/astro_logo.png"></div>
             </div>
         </div>
-        <div class="contact-wrapper">
-            <div>Laura Tóth</div>
-            <div>
-                tothlaura0714@gmail.com
-            </div>
-        </div>
-        <div class="contact-wrapper">2022</div>
-    </div>
-        
         <div class="icons-wrapper">
             <img src="img/social/icon_fb.svg" onclick="window.open('https://www.facebook.com/bence.bakos.984/')">
             <img src="img/social/icon_insta.svg" onclick="window.open('https://www.instagram.com/benb3d/')">
@@ -32,8 +36,9 @@
         height: 200px;
         width: 100%;
         background-color: var(--secondary-background-color);
-        padding: var(--desktop-global-padding);
+        padding: 50px var(--desktop-global-padding);
         box-sizing: border-box;
+        color: #6c6c6c;
     }
     .footer-wrapper {
         display: flex;
@@ -41,15 +46,23 @@
         justify-content: space-between;
         align-items: center;
     }
+    .left-col {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
     .created-by {
         font-weight: 600;
         margin-bottom: 10px;
     }
     .contact-wrapper {
-        margin-top: 5px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+    }
+    .contact-wrapper:last-child {
+        margin-top: 20px;
     }
     .contact-wrapper > div {
         width: 200px;
@@ -61,14 +74,69 @@
         justify-content: space-between;
         width: 14vw;
     }
+    .footer-divider {
+        height: 70px;
+        width: 2px;
+        background-color: #6c6c6c;
+        margin-left: 200px;
+        margin-right: 20px;
+    }
+    .powered {
+        margin-top: 20px;
+        display: flex;
+    }
+    .powered > img {
+        width: 60px;
+        object-fit: contain;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 .icons-wrapper > img {
-    width: 2.2vw;
+    width: 40px;
+    border-radius: 20px;
     transition: ease-in-out 0.2s;
+    box-shadow: 1px 1px 2px white;
 }
 
 .icons-wrapper > img:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition: ease-in-out 0.2s;
+}
+@media only screen and (max-width: 768px) {
+    section {
+        height: unset;
+        padding: 50px 20px;
+        box-sizing: border-box;
+    }
+    .contact-wrapper {
+        flex-direction: column;
+    }
+    .contact-wrapper > div { 
+        width: unset;
+    }
+    .footer-wrapper {
+        flex-direction: column;
+    }
+    .left-col {
+        flex-direction: column;
+    }
+    .site-design {
+        width: 65%;
+    }
+    .design-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-divider {
+        height: 2px;
+        width: 30vw;
+        margin: 50px 0px;
+    }
+    .icons-wrapper {
+        width: 75%;
+        margin-top: 50px;
+    }
 }
 </style>

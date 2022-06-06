@@ -5,35 +5,55 @@
 	--secondary-content-color: #0f5a32;
 	--tetriary-content-color: #F3EEEA;
 	--primary-background-color: #F3EEEA;
-	--primary-background-color-transparent: #f3eeeaac;
-	--secondary-background-color: #e2cec4;
+	--primary-background-color-transparent: #00000000;
+	--secondary-background-color: #000000;
 	--tetriary-background-color: #aa7d7a;
-	--desktop-global-padding: 50px; 
+	--desktop-global-padding: 100px; 
 	--primary-font: 'Roboto', sans-serif;
 	--secondary-font: 'Source Code Pro', monospace;
 }
 
 html {
     overflow-x: hidden;
+	overflow-y: auto;
+	height: 100%;
 }
 
 body {
+	overflow-y: auto;
+	overflow-x: hidden;
 	font-family: var(--secondary-font);
 	box-sizing: border-box;
 	padding: 0;
-	padding-top: 60px;
 	margin: 0;
 	width: 100%;
 	min-height: 100vh;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: var(--primary-background-color);
-	overflow-x: hidden;
+	background-color: var(--primary-background-color);	
+	scroll-snap-type: y mandatory;
+}
+section {
+	scroll-snap-align: start;
+}
+.divider-line {
+	width: 15vw;
+	height: 2px;
+	background-color: black;
+	margin: 50px auto;
+	position: relative;
 }
 @media (prefers-color-scheme: dark) {
 	/* body {
 		background: #111827;
 		color: #fff;
 	} */
+}
+
+@media only screen and (max-width: 768px) {
+	.divider-line {
+		width: 30vw;
+	}
 }

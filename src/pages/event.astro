@@ -10,26 +10,28 @@ import CenteredImage from '../components/CenteredImage.astro';
 	<Header />
     <CenteredImage Title="Program" Image="'img/location_intro.jpg'" />
 	<section class="section-timeline">
-		<div class="vertical-graph">
-			<div class="time-left-col">
-				<div>13:30</div>
-				<div>14:00</div>
-				<div>15:00</div>
-				<div>16:00</div>
-				<div>16:30</div>
-			</div>
-			<div class="time-divider"></div>
-			<div class="time-right-col">
-				<div>Találkozó</div>
-				<div>Szertartás</div>
-				<div>Fotózás</div>
-				<div>Találkozó a Vadvirág Étteremnél</div>
-				<div>Vacsora</div>
-			</div>
-			
-		</div>
+			<h1>13:30</h1>
+			<h2>Találkozó a Gyógynövények Völgyében</h2>
 	</section>
+	<section class="section-timeline">
+			<h1>14:00</h1>
+			<h2>Polgári szertartás</h2>
+	</section>
+	<section class="section-timeline">
+			<h1>15:00</h1>
+			<h2>Fotózás</h2>
+	</section>
+	<section class="section-timeline">
+			<h1>16:00</h1>
+			<h2>Találkozó a Vadvirág Étteremnél</h2>
+	</section>
+	<section class="section-timeline">
+			<h1>16:30</h1>
+			<h2>Vacsora</h2>
+	</section>
+
 	<section class="faq">
+		<div class="divider-line"></div>
 		<h1>FAQ</h1>
 		<div class="faq-box">
 			<div class="question">Milyen ruhát viseljek?</div>
@@ -58,12 +60,24 @@ import CenteredImage from '../components/CenteredImage.astro';
 </body>
 <style>
 	.section-timeline {
-		width: 100%;
-		margin-top: 100px;
-		margin-bottom: 100px;
+		min-height: 100vh;
+		width: 100vw;
+		scroll-snap-align: start;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
+		background-color: black;
+		color: white;
+	}
+	.section-highlight {
+		transition: all 0.3s linear;
+		background-color: white;
+		color: black;
+	}
+	.section-timeline > h1, .section-timeline > h2 {
+		font-size: 1.8rem;
+		font-family: var(--primary-font);
 	}
 	.vertical-graph {
 		position: relative;
@@ -105,9 +119,21 @@ import CenteredImage from '../components/CenteredImage.astro';
 	.time-right-col > div {
 		height: calc(80vh/5);
 	}
+	.faq {
+		width: 100vw;
+		background-color: white;
+		padding-bottom: 80px;
+		box-sizing: border-box;
+	}
+	.faq > h1 {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		font-size: 36px;
+		margin-bottom: 50px;
+	}
 	.faq-box {
-		background-color: var(--secondary-background-color);
-		padding: 20px 0px 20px 0px;
+		padding: 20px var(--desktop-global-padding) 20px var(--desktop-global-padding);
 		box-sizing: border-box;
 	}
 	.question {
@@ -116,5 +142,39 @@ import CenteredImage from '../components/CenteredImage.astro';
 		font-weight: 600;
 		margin-bottom: 10px;
 	}
+	@media only screen and (max-width: 768px) {
+		.section-timeline > h1, .section-timeline > h2 {
+			font-size: 1.4rem;
+			text-align: center;
+			line-height: 30px;
+		}
+		.faq-box {
+			padding: 20px;
+		}
 
+	}
 </style>
+<script is:inline>
+	const sections = document.querySelectorAll(".section-timeline");
+    // const buttons = document.querySelectorAll(".services-menu-element");
+    const options = {
+        threshold: 0.8
+    };
+    const observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+				entry.target.classList.add("section-highlight");
+                // let button = document.getElementById(entry.target.id + "-btn");
+                // if (button != undefined || button != NaN || button != null) {
+                //         sections.forEach(btn => btn.style.backgroundColor = "#0000");
+                //         button.style.backgroundColor = "#ff1a14B3";
+                //     }
+                // }
+			}	
+        });
+    }, options);
+
+        sections.forEach(section => {
+            observer.observe(section)
+        })
+</script>

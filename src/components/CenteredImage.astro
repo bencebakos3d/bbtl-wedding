@@ -2,17 +2,20 @@
 const {Title, Image} = Astro.props;
 ---
 
-<section style={`background: url(${Image}); background-size: cover;`}>
+<section style={`background: url(${Image}); background-size: cover; background-position: center;`}>
     <h1>{Title}</h1>
 </section>
 
 <style>
     section {
+        scroll-snap-align: start;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-size: cover;
+        background-position: center;
     }
     h1 {
         filter: drop-shadow(2px 4px 6px black);
@@ -22,9 +25,6 @@ const {Title, Image} = Astro.props;
         font-family: var(--primary-font);
     }
     @media only screen and (max-width: 768px) {
-        section {
-            margin-top: -60px;
-        }
         h1 {
             font-size: 3.6rem;
         }
