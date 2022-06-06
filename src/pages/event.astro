@@ -9,5 +9,112 @@ import CenteredImage from '../components/CenteredImage.astro';
 <body>
 	<Header />
     <CenteredImage Title="Program" Image="'img/location_intro.jpg'" />
+	<section class="section-timeline">
+		<div class="vertical-graph">
+			<div class="time-left-col">
+				<div>13:30</div>
+				<div>14:00</div>
+				<div>15:00</div>
+				<div>16:00</div>
+				<div>16:30</div>
+			</div>
+			<div class="time-divider"></div>
+			<div class="time-right-col">
+				<div>Találkozó</div>
+				<div>Szertartás</div>
+				<div>Fotózás</div>
+				<div>Találkozó a Vadvirág Étteremnél</div>
+				<div>Vacsora</div>
+			</div>
+			
+		</div>
+	</section>
+	<section class="faq">
+		<h1>FAQ</h1>
+		<div class="faq-box">
+			<div class="question">Milyen ruhát viseljek?</div>
+			<div class="answer">Nem szükséges öltöny vagy elegáns dressz, nincs megkötés. 
+				Könnyed, casual vagy business casual ruházat megfelelő lehet. 
+				Ügyelj a nyári melegre, világos ruházat ajánlott.</div>
+		</div>
+		<div class="faq-box">
+			<div class="question">Lesz templomi esküvő is?</div>
+			<div class="answer">Nem, kizárólag csak polgári szertartás lesz.</div>
+		</div>
+		<div class="faq-box">
+			<div class="question">Lesz templomi esküvő is?</div>
+			<div class="answer">Nem, kizárólag csak polgári szertartás lesz.</div>
+		</div>
+		<div class="faq-box">
+			<div class="question">Mi lesz a vacsorán?</div>
+			<div class="answer">Elsősorban egy amerikai gasztro élményt szeretnénk: kültéri barbecue, nachos, szendvicsek stb... Ezen kívül várhatók standard sült tálak is.</div>
+		</div>
+		<div class="faq-box">
+			<div class="question">Várható vegán / gluténmentes opció a vacsorán?</div>
+			<div class="answer">Igyekszünk mindenkire gondolni, így terveztünk vegán, illetve gluténmentes opciókat is vacsorára. Bármilyen egyéb ételallergiával kapcsolatban kérlek értesíts minket.</div>
+		</div>
+	</section>
 	<Footer />
 </body>
+<style>
+	.section-timeline {
+		width: 100%;
+		margin-top: 100px;
+		margin-bottom: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.vertical-graph {
+		position: relative;
+		height: 80vh;
+		display: flex;
+	}
+	.time-left-col {
+		width: 400px;
+    	text-align: right;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		font-size: 1.4rem;
+		font-family: var(--primary-font);
+		font-weight: 600;
+		letter-spacing: 2px;
+	}
+	.time-divider {
+		margin-left: 50px;
+		margin-right: 50px;
+		height: 100%;
+		width: 2px;
+		background-color: black;
+	}
+	.time-right-col {
+		width: 400px;
+    	text-align: left;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		font-size: 1.4rem;
+		font-family: var(--primary-font);
+		font-weight: 600;
+		letter-spacing: 2px;
+	}
+	.time-left-col > div {
+		height: calc(80vh/5);
+	}
+	.time-right-col > div {
+		height: calc(80vh/5);
+	}
+	.faq-box {
+		background-color: var(--secondary-background-color);
+		padding: 20px 0px 20px 0px;
+		box-sizing: border-box;
+	}
+	.question {
+		font-family: var(--primary-font);
+		font-size: 1.4rem;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+
+</style>

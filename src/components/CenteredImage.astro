@@ -21,4 +21,12 @@ const {Title, Image} = Astro.props;
         font-size: 5rem;
         font-family: var(--primary-font);
     }
+    @media only screen and (max-width: 768px) {
+        section {
+            margin-top: -60px;
+        }
+        h1 {
+            font-size: 3.6rem;
+        }
+    }
 </style>

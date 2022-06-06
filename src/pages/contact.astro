@@ -10,7 +10,7 @@ import Footer from '../components/Footer.astro';
 	<Header />
 	<CenteredImage Title="Kapcsolat" Image="'img/contact_intro.jpg'" />
     <section>
-		<div>Ha bármi kérdésed lenne, keress minket bátran:</div>
+		<h1>Ha bármi kérdésed lenne, keress minket bátran:</h1>
 		<img src="" alt="">
 		<div class="contact-details-wrapper">
 			<div>
@@ -24,9 +24,9 @@ import Footer from '../components/Footer.astro';
 			<div>
 				<div class="name">Bakos Bence</div>
 				<ul>
-				<li>bencemail1@gmail.com</li>
-				<li>+36 30 266 9370</li>
-				<li onclick="window.open('https://www.facebook.com/bence.bakos.984/')" id="fb-contact">Facebook Messenger</li>
+					<li>bencemail1@gmail.com</li>
+					<li>+36 30 266 9370</li>
+					<li onclick="window.open('https://www.facebook.com/bence.bakos.984/')" id="fb-contact">Facebook Messenger</li>
 				</ul>
 			</div>
 		</div>
@@ -36,6 +36,9 @@ import Footer from '../components/Footer.astro';
 </body>
 <style>
 
+h1 {
+	margin-bottom: 50px;
+}
 .contact-details-wrapper {
 	display: flex;
 	flex-direction: row;
@@ -45,7 +48,11 @@ import Footer from '../components/Footer.astro';
 
 }
 section {
+	width: 100%;
 	padding: var(--desktop-global-padding);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .name {
 	font-family: var(--primary-font);
