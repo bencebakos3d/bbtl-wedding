@@ -45,6 +45,35 @@ section {
 	margin: 50px auto;
 	position: relative;
 }
+button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 45px;
+    border-radius: 25px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: var(--tetriary-content-color);
+    background-color: var(--tetriary-background-color);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  button > span {
+    margin-right: 5px;
+  }
+  button > img {
+    width: 25px; 
+    height: 25px;
+    margin-right: -5px;
+  }
+
 @media (prefers-color-scheme: dark) {
 	/* body {
 		background: #111827;

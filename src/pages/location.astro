@@ -11,58 +11,8 @@ import CenteredImage from '../components/CenteredImage.astro';
   <Header />
   <CenteredImage Title="Helyszín" Image="'img/location_intro.jpg'" />
   <Maps />
-  <section>
-    <div>
-      Az esküvő a Gyógynövények Völgyében lesz, Zalaszentlászlón. 
-      A szertartás utáni vacsora pedig a nagyjából egy kilométerre levő Vadvirág Étteremben, Zalaudvarnokon.
-      <button class="btn-events" onclick="window.location.href='/event'"><span>Program</span><img src="/icons/next_icon.png" alt=""></button>
-      <div/> 
-      <div>
-        Szállást csak limitáltan tudunk biztosítani a Gyógynövénylakban, 
-        ezért a Zalaszentlászlón található Faluházban lesznek extra szálláshelyek. 
-      </div>
-
-      <div>
-        <span>Fontos tudnivalók</span>
-        <ul>
-          <li>A majorban a dohányzás csak az arra kijelölt helyeken engedélyezett</li>
-          <li>Szemetelni TILOS és életveszélyes</li>
-          <li>Számos állat található a farmon, a közelükben figyelemmel kell lenni</li>
-          <li></li>
-        </ul>
-      </div>
-      </div>
-  </section>
   <Footer />
 </body>
 
 <style>
-  .btn-events {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 150px;
-    height: 45px;
-    border-radius: 25px;
-    font-family: 'Roboto';
-    font-size: 18px;
-    color: var(--tetriary-content-color);
-    background-color: var(--tetriary-background-color);
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .btn-events > span {
-    margin-right: 5px;
-  }
-  .btn-events > img {
-    width: 25px; 
-    height: 25px;
-    margin-right: -5px;
-  }
 </style>

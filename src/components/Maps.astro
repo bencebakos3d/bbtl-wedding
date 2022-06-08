@@ -1,5 +1,24 @@
 <section>
   <div id="map"></div>
+  <div id="details">
+      Az esküvő a Gyógynövények Völgyében lesz, Zalaszentlászlón. 
+      A szertartás utáni vacsora pedig a nagyjából egy kilométerre levő Vadvirág Étteremben, Zalaudvarnokon.
+      <button class="btn-events" onclick="window.location.href='/event'"><span>Program</span><img src="/icons/next_icon.png" alt=""></button>
+      <div/> 
+      <div>
+        Szállást csak limitáltan tudunk biztosítani a Gyógynövénylakban, 
+        ezért a Zalaszentlászlón található Faluházban lesznek extra szálláshelyek. 
+      </div>
+
+      <div>
+        <span>Fontos tudnivalók</span>
+        <ul>
+          <li>A majorban a dohányzás csak az arra kijelölt helyeken engedélyezett</li>
+          <li>Szemetelni TILOS és életveszélyes</li>
+          <li>Számos állat található a farmon, a közelükben figyelemmel kell lenni</li>
+        </ul>
+      </div>
+  </div>
 </section>
 <script is:inline>
   var map;
@@ -19,9 +38,20 @@
 
 <style>
   #map {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: 500px;
+    height: 100%;
+  }
+  section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  section > div {
     width: 50%;
+  }
+  #details {
+    padding: var(--desktop-global-padding);
+    box-sizing: border-box;
   }
 </style>
