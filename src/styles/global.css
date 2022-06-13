@@ -7,7 +7,7 @@
 	--primary-background-color: #F3EEEA;
 	--primary-background-color-transparent: #00000000;
 	--secondary-background-color: #000000;
-	--tetriary-background-color: #aa7d7a;
+	--tetriary-background-color: #000000;
 	--desktop-global-padding: 100px; 
 	--primary-font: 'Roboto', sans-serif;
 	--secondary-font: 'Source Code Pro', monospace;
@@ -45,7 +45,7 @@ section {
 	margin: 50px auto;
 	position: relative;
 }
-button {
+.btn-events {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -65,10 +65,10 @@ button {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  button > span {
+  .btn-events > span {
     margin-right: 5px;
   }
-  button > img {
+  .btn-events > img {
     width: 25px; 
     height: 25px;
     margin-right: -5px;

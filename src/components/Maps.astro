@@ -23,19 +23,21 @@
 <script is:inline>
   var map;
   function initMap() {
+    const myLatLng = {lat: 46.89662175365611, lng: 17.11040849368509};
     map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 46.89662175365611, lng: 17.11040849368509},
+      center: myLatLng,
       mapTypeControl: false,
       streetViewControl: false,
       fullscreenControl: false,
-      zoom: 10
+      zoom: 11
     });
 
     const heartIcon = "icons/heart_icon.png"
     new google.maps.Marker({
-    position: myLatLng,
-    map,
-    title: "Gyógynövények Völgye",
+      position: myLatLng,
+      map,
+      title: "Gyógynövények Völgye",
+      icon: heartIcon
     });
 
   }
