@@ -30,6 +30,14 @@
       fullscreenControl: false,
       zoom: 10
     });
+
+    const heartIcon = "icons/heart_icon.png"
+    new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Gyógynövények Völgye",
+    });
+
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFahCAfft50S6hH8okvTsjAFOtpzt7WlA&callback=initMap" 
