@@ -4,7 +4,7 @@
 	--primary-content-color: #75464A;
 	--secondary-content-color: #0f5a32;
 	--tetriary-content-color: #F3EEEA;
-	--primary-background-color: #F3EEEA;
+	--primary-background-color: #FFFFFF;
 	--primary-background-color-transparent: #00000000;
 	--secondary-background-color: #000000;
 	--tetriary-background-color: #000000;
@@ -46,9 +46,7 @@ section {
 	position: relative;
 }
 .btn-events {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    
     width: 150px;
     height: 45px;
     border-radius: 25px;
@@ -82,6 +80,9 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
+	body {
+		scroll-snap-type: y proximity;
+	}
 	.divider-line {
 		width: 30vw;
 	}

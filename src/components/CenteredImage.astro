@@ -25,6 +25,9 @@ const {Title, Image} = Astro.props;
         font-family: var(--primary-font);
     }
     @media only screen and (max-width: 768px) {
+        section {
+            scroll-snap-align: none;
+        }
         h1 {
             font-size: 3.6rem;
         }

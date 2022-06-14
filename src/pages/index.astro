@@ -9,11 +9,40 @@ import CenteredImage from '../components/CenteredImage.astro';
 <body>
 	<Header />
 	<CenteredImage Title="" Image="'img/index_intro.jpg'" />
-	<section>
-		<div class="image"></div>
-		<div class="invert"></div>
+	<section class="invite-text">
+		<h1>Szeretettel várunk az esküvőnkön Július 9-én!</h1>
+		<h2>Érdekelnek a részletek?</h2>
+		<button class="btn-events" onclick="window.location.href='/event'"><span>Program</span><img src="/icons/next_icon.png" alt=""></button>
 	</section>
 	<Footer />
 </body>
 <style>
+	.invite-text {
+		text-align: center;
+		font-family: var(--primary-font);
+		font-size: 3rem;
+		background-color: white;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: var(--desktop-global-padding);
+		box-sizing: border-box;
+	}
+	.invite-text > h2 {
+		font-size: 1.8rem;
+		margin-bottom: 0;
+	}
+
+	@media only screen and (max-width: 768px) { 
+		.invite-text {
+			font-size: 1.6rem;
+			padding: 20px;
+		}
+		.invite-text > h2 {
+		font-size: 1.4rem;
+		margin-top: 15vh;
+	}
+	}
 </style>
