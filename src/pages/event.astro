@@ -19,7 +19,7 @@ import CenteredImage from '../components/CenteredImage.astro';
 	</section>
 	<section class="section-timeline">
 			<h1>15:00</h1>
-			<h2>Fotózás</h2>
+			<h2>Közös fotózás</h2>
 	</section>
 	<section class="section-timeline">
 			<h1>16:00</h1>
@@ -37,23 +37,23 @@ import CenteredImage from '../components/CenteredImage.astro';
 			<div class="question">Milyen ruhát viseljek?</div>
 			<div class="answer">Nem szükséges öltöny vagy elegáns dressz, nincs megkötés. 
 				Casual vagy business casual ruházat megfelelő. 
-				Ügyelj a nyári melegre, világos ruházat ajánlott.</div>
+				Ügyelj a nyári melegre, világos ruházat ajánlott. Designer sneakerek, mint Yeezy / Air Jordan előnyt jelentenek.</div>
 		</div>
 		<div class="faq-box">
 			<div class="question">Lesz templomi esküvő is?</div>
-			<div class="answer">Nem, kizárólag csak polgári szertartás lesz.</div>
+			<div class="answer">Nem, kizárólag csak polgári szertartás lesz helyben.</div>
 		</div>
 		<div class="faq-box">
 			<div class="question">Milyen ételek lesznek a vacsorán?</div>
-			<div class="answer">Elsősorban egy amerikai gasztro élményt szeretnénk: kültéri barbecue, nachos, szendvicsek stb... Ezen kívül várhatók standard sült tálak is.</div>
+			<div class="answer">Elsősorban egy amerikai gasztro élményt szeretnénk: svédasztalos barbecue, szendvicsek, grillezett zöldségek stb... Ezen kívül várhatók standard sült tálak is.</div>
 		</div>
 		<div class="faq-box">
-			<div class="question">Várható vegán / gluténmentes opció a vacsorán?</div>
-			<div class="answer">Igyekszünk mindenkire gondolni, így terveztünk vegán, illetve gluténmentes opciókat is vacsorára. Bármilyen egyéb ételallergiával kapcsolatban kérlek értesíts minket.</div>
+			<div class="question">Várható vegetáriánus / gluténmentes opció a vacsorán?</div>
+			<div class="answer">Gluténmentes opciót sajnos nem tudunk biztosítani, viszont várhatók vegetáriánus ételek. Bármilyen ételallergiával kapcsolatban kérlek értesíts minket.</div>
 		</div>
 		<div class="faq-box">
 			<div class="question">Milyen ajándékokat tudnék adni?</div>
-			<div class="answer">Szeretnénk kiemelni, hogy nem várunk senkitől ajándékot. Amennyiben szeretnél ajándékkal kedveskedni, azt a fotozás után, vagy vacsora után adhatod át.</div>
+			<div class="answer">Szeretnénk kiemelni, hogy nem várunk senkitől ajándékot. Amennyiben mégis szeretnél ajándékkal kedveskedni, azt a fotozás után, vagy vacsora után adhatod át egy borítékban.</div>
 		</div>
 	</section>
 	<Footer />
@@ -121,6 +121,7 @@ import CenteredImage from '../components/CenteredImage.astro';
 	}
 	.faq {
 		width: 100vw;
+		min-height: 100vh;
 		background-color: white;
 		padding-bottom: 80px;
 		box-sizing: border-box;
@@ -138,9 +139,12 @@ import CenteredImage from '../components/CenteredImage.astro';
 	}
 	.question {
 		font-family: var(--primary-font);
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 		font-weight: 600;
-		margin-bottom: 10px;
+		margin-bottom: 25px;
+	}
+	.answer {
+		font-size: 1.3rem;
 	}
 	@media only screen and (max-width: 768px) {
 		.section-timeline > h1, .section-timeline > h2 {
@@ -151,6 +155,16 @@ import CenteredImage from '../components/CenteredImage.astro';
 		.faq-box {
 			padding: 20px;
 		}
+		.faq {
+			min-height: unset;
+		}
+		.question {
+			font-size: 1.3rem;
+		}
+		.answer {
+			font-size: 1rem;
+		}
+		
 
 	}
 </style>
