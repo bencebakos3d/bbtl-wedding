@@ -51,6 +51,10 @@ import CenteredImage from '../components/CenteredImage.astro';
       <div class="answer">Gluténmentes opciót sajnos nem tudunk biztosítani, viszont várhatók vegetáriánus ételek mint például rántott cukkini és karfiol, grillezett zöldségek, rántott gomba. Bármilyen ételallergiával kapcsolatban kérlek értesíts minket.</div>
     </div>
     <div class="faq-box">
+      <div class="question">Milyen torták, sütemények lesznek?</div>
+      <div class="answer">Erdei gyümölcsös New York Cheesecake, Mákos citromos laktózmentes torta, Epres málnás mousse (mézzel édesített, cukormentes)</div>
+    </div>
+    <div class="faq-box">
       <div class="question">Milyen ajándékokat tudnék adni?</div>
       <div class="answer">Szeretnénk kiemelni, hogy nem várunk senkitől ajándékot. Amennyiben mégis szeretnél ajándékkal kedveskedni, azt a fotozás után, vagy vacsora után adhatod át egy borítékban.</div>
     </div>
@@ -60,7 +64,6 @@ import CenteredImage from '../components/CenteredImage.astro';
 
 <script is:inline>
   const sections = document.querySelectorAll('.section-timeline');
-  // const buttons = document.querySelectorAll(".services-menu-element");
   const options = {
     threshold: 0.8,
   };
@@ -68,12 +71,6 @@ import CenteredImage from '../components/CenteredImage.astro';
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('section-highlight');
-        // let button = document.getElementById(entry.target.id + "-btn");
-        // if (button != undefined || button != NaN || button != null) {
-        //         sections.forEach(btn => btn.style.backgroundColor = "#0000");
-        //         button.style.backgroundColor = "#ff1a14B3";
-        //     }
-        // }
       }
     });
   }, options);
