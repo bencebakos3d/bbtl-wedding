@@ -5,190 +5,191 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CenteredImage from '../components/CenteredImage.astro';
 ---
+
 <BaseHead />
 <body>
-	<Header />
-    <CenteredImage Title="Program" Image="'img/event_intro.jpg'" />
-	<section class="section-timeline">
-			<h1>13:30</h1>
-			<h2>Találkozó a Gyógynövények Völgyében</h2>
-	</section>
-	<section class="section-timeline">
-			<h1>14:00</h1>
-			<h2>Polgári szertartás</h2>
-	</section>
-	<section class="section-timeline">
-			<h1>15:00</h1>
-			<h2>Közös fotózás</h2>
-	</section>
-	<section class="section-timeline">
-			<h1>16:00</h1>
-			<h2>Találkozó a Vadvirág Étteremnél</h2>
-	</section>
-	<section class="section-timeline">
-			<h1>16:30</h1>
-			<h2>Vacsora</h2>
-	</section>
+  <Header />
+  <CenteredImage Title="Program" Image="'img/event_intro.jpg'" />
+  <section class="section-timeline">
+    <h1>13:30</h1>
+    <h2>Találkozó a Gyógynövények Völgyében</h2>
+  </section>
+  <section class="section-timeline">
+    <h1>14:00</h1>
+    <h2>Polgári szertartás</h2>
+  </section>
+  <section class="section-timeline">
+    <h1>15:00</h1>
+    <h2>Közös fotózás</h2>
+  </section>
+  <section class="section-timeline">
+    <h1>16:00</h1>
+    <h2>Találkozó a Vadvirág Étteremnél</h2>
+  </section>
+  <section class="section-timeline">
+    <h1>16:30</h1>
+    <h2>Vacsora</h2>
+  </section>
 
-	<section class="faq">
-		<div class="divider-line"></div>
-		<h1>FAQ</h1>
-		<div class="faq-box">
-			<div class="question">Milyen ruhát viseljek?</div>
-			<div class="answer">Nem szükséges öltöny vagy elegáns dressz, nincs megkötés. 
-				Casual vagy business casual ruházat megfelelő. 
-				Ügyelj a nyári melegre, világos ruházat ajánlott. Designer sneakerek, mint Yeezy / Air Jordan előnyt jelentenek.</div>
-		</div>
-		<div class="faq-box">
-			<div class="question">Lesz templomi esküvő is?</div>
-			<div class="answer">Nem, kizárólag csak polgári szertartás lesz helyben.</div>
-		</div>
-		<div class="faq-box">
-			<div class="question">Milyen ételek lesznek a vacsorán?</div>
-			<div class="answer">Elsősorban egy amerikai gasztro élményt szeretnénk: svédasztalos barbecue, szendvicsek, grillezett zöldségek stb... Ezen kívül várhatók standard sült tálak is.</div>
-		</div>
-		<div class="faq-box">
-			<div class="question">Várható vegetáriánus / gluténmentes opció a vacsorán?</div>
-			<div class="answer">Gluténmentes opciót sajnos nem tudunk biztosítani, viszont várhatók vegetáriánus ételek. Bármilyen ételallergiával kapcsolatban kérlek értesíts minket.</div>
-		</div>
-		<div class="faq-box">
-			<div class="question">Milyen ajándékokat tudnék adni?</div>
-			<div class="answer">Szeretnénk kiemelni, hogy nem várunk senkitől ajándékot. Amennyiben mégis szeretnél ajándékkal kedveskedni, azt a fotozás után, vagy vacsora után adhatod át egy borítékban.</div>
-		</div>
-	</section>
-	<Footer />
+  <section class="faq">
+    <div class="divider-line"></div>
+    <h1>FAQ</h1>
+    <div class="faq-box">
+      <div class="question">Milyen ruhát viseljek?</div>
+      <div class="answer">Nem szükséges öltöny vagy elegáns dressz, nincs megkötés. Casual vagy business casual ruházat megfelelő. Ügyelj a nyári melegre, világos ruházat ajánlott. Designer sneakerek, mint Yeezy / Air Jordan előnyt jelentenek.</div>
+    </div>
+    <div class="faq-box">
+      <div class="question">Lesz templomi esküvő is?</div>
+      <div class="answer">Nem, kizárólag csak polgári szertartás lesz helyben.</div>
+    </div>
+    <div class="faq-box">
+      <div class="question">Milyen ételek lesznek a vacsorán?</div>
+      <div class="answer">Elsősorban egy amerikai gasztro élményt szeretnénk átadni: svédasztalos barbecue marhaszeggyel, oldalassal és csirkével, valamint pulled pork szendvicsek. Köretnek steak burgonya, grillezett zöldségek és saláták, coleslaw. Ezen kívül várhatók standard sült tálak is, vegetáriánus opcióval. Frissítőnek pedig hideg almafröccs, jeges limonádék és ásványvíz.</div>
+    </div>
+    <div class="faq-box">
+      <div class="question">Várható vegetáriánus / gluténmentes opció a vacsorán?</div>
+      <div class="answer">Gluténmentes opciót sajnos nem tudunk biztosítani, viszont várhatók vegetáriánus ételek mint például rántott cukkini és karfiol, grillezett zöldségek, rántott gomba. Bármilyen ételallergiával kapcsolatban kérlek értesíts minket.</div>
+    </div>
+    <div class="faq-box">
+      <div class="question">Milyen ajándékokat tudnék adni?</div>
+      <div class="answer">Szeretnénk kiemelni, hogy nem várunk senkitől ajándékot. Amennyiben mégis szeretnél ajándékkal kedveskedni, azt a fotozás után, vagy vacsora után adhatod át egy borítékban.</div>
+    </div>
+  </section>
+  <Footer />
 </body>
-<style>
-	.section-timeline {
-		min-height: 100vh;
-		width: 100vw;
-		scroll-snap-align: start;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		background-color: black;
-		color: white;
-	}
-	.section-highlight {
-		transition: all 0.7s linear;
-		background-color: white;
-		color: black;
-	}
-	.section-timeline > h1, .section-timeline > h2 {
-		font-size: 1.8rem;
-		font-family: var(--primary-font);
-	}
-	.vertical-graph {
-		position: relative;
-		height: 80vh;
-		display: flex;
-	}
-	.time-left-col {
-		width: 400px;
-    	text-align: right;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		font-size: 1.4rem;
-		font-family: var(--primary-font);
-		font-weight: 600;
-		letter-spacing: 2px;
-	}
-	.time-divider {
-		margin-left: 50px;
-		margin-right: 50px;
-		height: 100%;
-		width: 2px;
-		background-color: black;
-	}
-	.time-right-col {
-		width: 400px;
-    	text-align: left;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		font-size: 1.4rem;
-		font-family: var(--primary-font);
-		font-weight: 600;
-		letter-spacing: 2px;
-	}
-	.time-left-col > div {
-		height: calc(80vh/5);
-	}
-	.time-right-col > div {
-		height: calc(80vh/5);
-	}
-	.faq {
-		width: 100vw;
-		min-height: 100vh;
-		background-color: white;
-		padding-bottom: 80px;
-		box-sizing: border-box;
-	}
-	.faq > h1 {
-		width: 100%;
-		text-align: center;
-		margin: 0;
-		font-size: 36px;
-		margin-bottom: 50px;
-	}
-	.faq-box {
-		padding: 20px var(--desktop-global-padding) 20px var(--desktop-global-padding);
-		box-sizing: border-box;
-	}
-	.question {
-		font-family: var(--primary-font);
-		font-size: 1.6rem;
-		font-weight: 600;
-		margin-bottom: 25px;
-	}
-	.answer {
-		font-size: 1.3rem;
-	}
-	@media only screen and (max-width: 768px) {
-		.section-timeline > h1, .section-timeline > h2 {
-			font-size: 1.4rem;
-			text-align: center;
-			line-height: 30px;
-		}
-		.faq-box {
-			padding: 20px;
-		}
-		.faq {
-			min-height: unset;
-		}
-		.question {
-			font-size: 1.3rem;
-		}
-		.answer {
-			font-size: 1rem;
-		}
-		
 
-	}
-</style>
 <script is:inline>
-	const sections = document.querySelectorAll(".section-timeline");
-    // const buttons = document.querySelectorAll(".services-menu-element");
-    const options = {
-        threshold: 0.8
-    };
-    const observer = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-				entry.target.classList.add("section-highlight");
-                // let button = document.getElementById(entry.target.id + "-btn");
-                // if (button != undefined || button != NaN || button != null) {
-                //         sections.forEach(btn => btn.style.backgroundColor = "#0000");
-                //         button.style.backgroundColor = "#ff1a14B3";
-                //     }
-                // }
-			}	
-        });
-    }, options);
+  const sections = document.querySelectorAll('.section-timeline');
+  // const buttons = document.querySelectorAll(".services-menu-element");
+  const options = {
+    threshold: 0.8,
+  };
+  const observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('section-highlight');
+        // let button = document.getElementById(entry.target.id + "-btn");
+        // if (button != undefined || button != NaN || button != null) {
+        //         sections.forEach(btn => btn.style.backgroundColor = "#0000");
+        //         button.style.backgroundColor = "#ff1a14B3";
+        //     }
+        // }
+      }
+    });
+  }, options);
 
-        sections.forEach(section => {
-            observer.observe(section)
-        })
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
 </script>
+
+<style>
+  .section-timeline {
+    min-height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+  }
+  .section-highlight {
+    transition: all 0.7s linear;
+    background-color: white;
+    color: black;
+  }
+  .section-timeline > h1,
+  .section-timeline > h2 {
+    font-size: 1.8rem;
+    font-family: var(--primary-font);
+  }
+  .vertical-graph {
+    position: relative;
+    height: 80vh;
+    display: flex;
+  }
+  .time-left-col {
+    width: 400px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .time-divider {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 100%;
+    width: 2px;
+    background-color: black;
+  }
+  .time-right-col {
+    width: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .time-left-col > div {
+    height: calc(80vh / 5);
+  }
+  .time-right-col > div {
+    height: calc(80vh / 5);
+  }
+  .faq {
+    width: 100vw;
+    min-height: unset;
+    background-color: white;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+  }
+  .faq > h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  .faq-box {
+    padding: 20px var(--desktop-global-padding) 20px var(--desktop-global-padding);
+    box-sizing: border-box;
+  }
+  .question {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  .answer {
+    font-size: 1.3rem;
+  }
+  @media only screen and (max-width: 768px) {
+    .section-timeline > h1,
+    .section-timeline > h2 {
+      font-size: 1.4rem;
+      text-align: center;
+      line-height: 30px;
+    }
+    .faq-box {
+      padding: 20px;
+    }
+    .faq {
+      min-height: unset;
+    }
+    .question {
+      font-size: 1.3rem;
+    }
+    .answer {
+      font-size: 1rem;
+    }
+  }
+</style>
